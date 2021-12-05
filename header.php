@@ -16,7 +16,7 @@
         <a href="/">
             The Gathering
             <span class="header-link-separator">Technical blog</span>
-            
+
         </a>
     </section>
 </header>

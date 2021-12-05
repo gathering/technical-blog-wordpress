@@ -2,7 +2,8 @@ body {
     font: 18px "Roboto", sans-serif;
     line-height: 1.625;
     font-weight: 300;
-    color: #444;
+    color: #fff;
+	background-color: #303030;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: #fff;
 }
 
 h1, h2, h3 {
@@ -21,7 +22,7 @@ h1, h2, h3 {
 h1 a {
     font-size: 40px;
     margin-bottom: 40px;
-    color: #444;
+    color: #fff;
 }
 
 article h1 {
@@ -60,7 +61,7 @@ h3 {
 }
 
 article {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 p {
@@ -79,7 +80,8 @@ strong {
 }
 
 pre {
-    background: #efefef;
+    background: #424242;
+	padding: 10px;
 }
 
 code {
@@ -92,6 +94,7 @@ img {
     width: 100%;
     height: 100%;
     margin: 10px 0 10px 0;
+	border-radius: 2%;
 }
 
 .left-content,
@@ -102,7 +105,7 @@ img {
 @media (min-width: 720px) {
     .left-content {
         float: left;
-        width: 600px;
+        width: 640px;
     }
 
     .right-content {
@@ -203,8 +206,6 @@ img {
     margin-bottom: 0px;
 }
 
-/* Author
-------------------------------------------------------------------------------*/
 .author {
     background-color: #10222B;
     color: #FFFFFF;
@@ -229,4 +230,26 @@ img {
     content: "";
     display: table;
     clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 10px;
+}
+
+.alignleft {
+  float: left;
+  padding: 10px;
+}
+
+figcaption {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin-top: -10px;
+font-size: 14px;
+}
+
+figure {
+  margin: 10px;
 }

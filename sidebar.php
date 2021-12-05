@@ -6,7 +6,7 @@
     </div>
     <div class="crew-list">
         <h2>Filter posts by crew</h2>
-        <ul > <?php wp_list_cats('sort_column=namonthly'); ?> </ul>        
+        <ul > <?php wp_list_cats('sort_column=namonthly'); ?> </ul>
     </div>
     <div class="data-box">
         <h2>Related sites</h2>
