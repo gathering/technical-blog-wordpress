@@ -15,17 +15,17 @@
             <li><a href="https://kandu.no/">KANDU</a></li>
         </ul>
     </div>
-    <!--
+    
     <div class="collaborators ">
         <header class="collaborators-header">
             <h2>Collaborators</h2>
         </header>
-        <div class="collaborators-list clearfix">
+        <div class="collaborators-list clearfix"><!--
             <a href="https://www.nlogic.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/nlogic.svg" alt="nlogic logo"></a>
             <a href="https://www.juniper.net/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/juniper.svg" alt="juniper logo"></a>
             <a href="https://www.nextron.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/nextron.svg" alt="nextron logo"></a>
             <a href="https://www.fortinet.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/fortinet.svg" alt="fortinet logo"></a>
-            <a href="https://www.telenor.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/telenor.svg" alt="telenor logo"></a>
+            <a href="https://www.telenor.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/telenor.svg" alt="telenor logo"></a>-->
             <a href="https://www.nexthop.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/nexthop.svg" alt="nexthop logo"></a>
         </div>
     </div>
