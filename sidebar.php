@@ -15,7 +15,7 @@
             <li><a href="https://kandu.no/">KANDU</a></li>
         </ul>
     </div>
-    
+
     <div class="collaborators ">
         <header class="collaborators-header">
             <h2>Collaborators</h2>
@@ -27,6 +27,11 @@
             <a href="https://www.fortinet.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/fortinet.svg" alt="fortinet logo"></a>
             <a href="https://www.telenor.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/telenor.svg" alt="telenor logo"></a>-->
             <a href="https://www.nexthop.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/nexthop.svg" alt="nexthop logo"></a>
+            <a href="https://www.nlogic.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/nlogic.svg" alt="nlogic logo"></a>
+            <a href="https://www.arista.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/arista.svg" alt="arista logo"></a>
+            <a href="https://www.paloaltonetworks.com/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/palo-alto.svg" alt="palo alto logo"></a>
+            <a href="https://www.globalfiber.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/globalfiber.svg" alt="globalfiber logo"></a>
+            <a href="https://www.telenor.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/telenor.svg" alt="telenor logo"></a>
         </div>
     </div>
     -->
