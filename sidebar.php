@@ -34,5 +34,4 @@
             <a href="https://www.telenor.no/"><img src="<?php echo get_template_directory_uri(); ?>/static/img/partners/telenor.svg" alt="telenor logo"></a>
         </div>
     </div>
-    -->
 </section>
