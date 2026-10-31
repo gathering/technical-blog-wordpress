@@ -1,6 +1,6 @@
 # Tech Blog Theme for Wordpress
 
-The theme of [tech.gathering.org](https://tech.gathering.org).
+The theme of [tech.tg.no](https://tech.tg.no).
 
 ## How it is deployed
 

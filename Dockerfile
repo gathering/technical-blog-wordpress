@@ -1,4 +1,4 @@
-# tech.gathering.org: the official WordPress image with this theme in it,
+# tech.tg.no: the official WordPress image with this theme in it,
 # and uploads of up to 256 MB. Runs as systemstotte/technical in
 # gathering/sys-k8s-workloads.
 #
