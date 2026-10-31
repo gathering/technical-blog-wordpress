@@ -1,5 +1,5 @@
 </div>
 
-<script src="https://code.jquery.com/jquery-latest.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
