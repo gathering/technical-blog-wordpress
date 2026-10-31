@@ -6,13 +6,17 @@
         <div class="meta">
         <?php the_time('d M Y') ?>, by <?php the_author_posts_link(); ?>
             <?php
-                    $cats = get_the_category();
-                    if ($cats[0]->cat_name != 'Ukategorisert') {
-                        echo ' from ';
-                        foreach($cats as $category) {
-                            echo $category->cat_name;
-                            if (count($cats) > 1) { echo ', '; }
+                    // The post's categories, without the default one
+                    // ("Uncategorized"), whatever it is called.
+                    $default = (int) get_option('default_category');
+                    $names = [];
+                    foreach (get_the_category() as $category) {
+                        if ($category->term_id !== $default) {
+                            $names[] = esc_html($category->name);
                         }
+                    }
+                    if ($names) {
+                        echo ' from ' . implode(', ', $names);
                     }
             ?>
         </div>
@@ -22,7 +26,7 @@
     </article>
 <?php endwhile; else: ?>
     <p>
-        <?php _e('Sorry, no posts matched your criteria.'); ?>
+        <?php esc_html_e('Sorry, no posts matched your criteria.'); ?>
     </p>
 <?php endif; ?>
 <div style="padding-bottom: 25px;">
