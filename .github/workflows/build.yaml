@@ -1,0 +1,38 @@
+# Builds ghcr.io/gathering/technical-blog-wordpress:latest on every push to
+# main. It is also rebuilt every Monday, so that it gets the official
+# image's Debian and PHP patches. sys-k8s-workloads deploys each new build
+# by its digest.
+name: build-image
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64
+          # Always the newest wordpress:php8.4-apache, not a cached one.
+          pull: true
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:sha-${{ github.sha }}
