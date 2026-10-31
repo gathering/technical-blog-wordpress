@@ -1,6 +1,7 @@
 /* Roboto, served from the theme instead of Google Fonts. Latin and Latin
-   Extended only, in the faces main.css uses: 300 for text, 400 for
-   strong, 700 for headings, each with its italic. From @fontsource/roboto
+   Extended only, each with its italic: 300 for text, 700 for headings and
+   bold, and 400 for anything in a post that asks for normal weight. A
+   browser only downloads a face the page uses. From @fontsource/roboto
    5.3.0, under the SIL Open Font License (static/fonts/LICENSE). */
 
 @font-face {

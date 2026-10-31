@@ -15,6 +15,13 @@ permissions:
   contents: read
   packages: write
 
+# One build at a time. A push during a build waits for it, and a newer push
+# replaces the one waiting, so latest ends on the newest commit and never on
+# an older build that happened to finish last.
+concurrency:
+  group: build-image
+  cancel-in-progress: false
+
 jobs:
   build-image:
     runs-on: ubuntu-latest

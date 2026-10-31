@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <?php wp_head(); ?>
 </head>
-<?php /* No body_class(): on an author's page it adds the class "author",
-         which main.css styles as an author box. */ ?>
-<body>
+<body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header id="main-header">
     <section class="container">
